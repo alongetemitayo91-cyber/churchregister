@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Members | DFICC</title>
+    <link rel="icon" href="dficc-logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <div class="logo-circle">
+          <img src="dficc-logo.png" alt="DFICC Logo" />
+        </div>
+
+        <h2>DFICC</h2>
+
+        <p>Church Registrar</p>
+      </div>
+
+      <nav>
+        <a href="index.html"> Dashboard </a>
+
+        <a href="register.html"> Register Member </a>
+
+        <a href="members.html" class="active"> Members </a>
+      </nav>
+    </div>
+
+    <div class="main">
+      <header>
+        <div>
+          <h1>Members</h1>
+
+          <p>DFICC registered church members</p>
+        </div>
+
+        <a href="register.html" class="primary-btn"> + Register Member </a>
+      </header>
+
+      <div class="members-container">
+        <div class="search-box">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search members by name, ID or phone..."
+          />
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Member ID</th>
+
+                <th>Full Name</th>
+
+                <th>Gender</th>
+
+                <th>Phone</th>
+
+                <th>Department</th>
+
+                <th>Date Joined</th>
+
+                <th>Action</th>
+              </tr>
+            </thead>
+
+            <tbody id="membersTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/members.js"></script>
+  </body>
+</html>

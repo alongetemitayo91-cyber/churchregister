@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Member | DFICC</title>
+    <link rel="icon" type="image/png" href="dficc-logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <div class="logo-circle">
+          <img src="dficc-logo.png" alt="DFICC Logo" />
+        </div>
+        <h2>DFICC</h2>
+        <p>Church Registrar</p>
+      </div>
+
+      <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="register.html" class="active">Register Member</a>
+        <a href="members.html">Members</a>
+      </nav>
+    </div>
+
+    <div class="main">
+      <header>
+        <div>
+          <h1>Member Registration</h1>
+          <p>Register a new member of DFICC</p>
+        </div>
+      </header>
+
+      <div class="form-container">
+        <form id="memberForm">
+          <div class="form-section">
+            <h2>Member Information</h2>
+
+            <div class="form-grid">
+              <div class="form-group full">
+                <label>Full Name *</label>
+                <input
+                  type="text"
+                  id="full_name"
+                  name="full_name"
+                  placeholder="Enter full name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label>Date of Birth</label>
+                <input type="date" id="date_of_birth" name="date_of_birth" />
+              </div>
+
+              <div class="form-group">
+                <label>Gender</label>
+                <select id="gender" name="gender">
+                  <option value="">Select gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="08012345678"
+                />
+              </div>
+
+              <div class="form-group">
+                <label>Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="example@email.com"
+                />
+              </div>
+
+              <div class="form-group full">
+                <label>Address</label>
+                <textarea
+                  id="address"
+                  name="address"
+                  placeholder="Enter home address"
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label>Date Joined</label>
+                <input type="date" id="date_joined" name="date_joined" />
+              </div>
+
+              <div class="form-group">
+                <label>Emergency Contact</label>
+                <input
+                  type="text"
+                  id="emergency_contact"
+                  name="emergency_contact"
+                  placeholder="Name and phone number"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div id="message"></div>
+
+          <div class="form-actions">
+            <button type="reset" class="secondary-btn">Clear</button>
+
+            <button type="submit" class="primary-btn">Register Member</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/register.js"></script>
+  </body>
+</html>

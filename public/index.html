@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DFICC Church Registrar</title>
+    <link rel="icon" type="image/png" href="dficc-logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo">
+        <div class="logo-circle">
+          <img src="dficc-logo.png" alt="DFICC Logo" />
+        </div>
+
+        <h2>DFICC</h2>
+
+        <p>Church Registrar</p>
+      </div>
+
+      <nav>
+        <a href="index.html" class="active">Dashboard</a>
+
+        <a href="register.html">Register Member</a>
+
+        <a href="members.html">Members</a>
+      </nav>
+    </div>
+
+    <div class="main">
+      <header>
+        <div>
+          <h1>Dashboard</h1>
+
+          <p>David's Family International Christian Center</p>
+        </div>
+
+        <a href="register.html" class="primary-btn"> + Register Member </a>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <div class="card-icon">👥</div>
+
+          <div>
+            <p>Total Members</p>
+
+            <h2 id="totalMembers">0</h2>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">📅</div>
+
+          <div>
+            <p>Today's Date</p>
+
+            <h2 id="todayDate"></h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="welcome">
+        <h2>Welcome to DFICC Church Registrar</h2>
+
+        <p>Manage and maintain church member records from one simple system.</p>
+
+        <a href="register.html" class="primary-btn"> Register New Member </a>
+      </section>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>
