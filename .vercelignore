@@ -1,0 +1,4 @@
+# The Express/SQLite server is for local development only. Vercel uses public/ and api/.
+server.js
+database/
+.env.local
